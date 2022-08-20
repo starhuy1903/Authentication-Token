@@ -59,11 +59,11 @@ const AuthForm = () => {
                     });
                 }
             })
-            .then(data => {
+            .then((data) => {
                 authCtx.login(data.idToken)
-                    .catch((err) => {
-                        alert(err.message)
-                    })
+            })
+            .catch((err) => {
+                alert(err.message)
             })
     }
 
